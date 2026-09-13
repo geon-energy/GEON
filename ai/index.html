@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GEON AI / Agent Access</title>
+
+  <meta name="description" content="GEON machine-readable energy and power opportunity data for AI systems and agents.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7faf8;
+      color: #17352b;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #17352b;
+      color: #ffffff;
+      padding: 22px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .back {
+      font-size: 14px;
+      color: #d8b45a;
+    }
+
+    main {
+      padding: 70px 0;
+    }
+
+    .eyebrow {
+      color: #92752b;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 19px;
+      color: #536a60;
+      margin-bottom: 45px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dce8e2;
+      border-radius: 14px;
+      padding: 25px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #60746c;
+    }
+
+    .resource {
+      display: block;
+      background: #edf5f0;
+      border-radius: 9px;
+      padding: 12px 15px;
+      margin: 10px 0;
+      font-family: monospace;
+      font-size: 14px;
+      color: #31564a;
+      word-break: break-all;
+    }
+
+    .levels {
+      margin-top: 45px;
+      background: #17352b;
+      color: #ffffff;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .levels h2 {
+      margin-top: 0;
+    }
+
+    .level {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .level:last-child {
+      border-bottom: 0;
+    }
+
+    .level strong {
+      color: #d8b45a;
+      margin-right: 8px;
+    }
+
+    .note {
+      margin-top: 40px;
+      padding: 22px;
+      background: #f4f0df;
+      border: 1px solid #e4d9ad;
+      border-radius: 12px;
+      color: #5e604f;
+    }
+
+    footer {
+      background: #10251e;
+      color: #b7c8c0;
+      padding: 30px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 50px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="brand">GEON</div>
+    <a class="back" href="../">← Back to GEON</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="container">
+
+    <div class="eyebrow">
+      Intelligence Interface
+    </div>
+
+    <h1>AI / Agent Access</h1>
+
+    <p class="intro">
+      GEON is designed to make structured energy and power opportunity
+      information discoverable and understandable by humans, AI systems
+      and future autonomous agents.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>Energy Asset Registry</h2>
+
+        <p>
+          Machine-readable records describing verified and structured
+          energy opportunities.
+        </p>
+
+        <a class="resource" href="../data/energy-assets.json">
+          /data/energy-assets.json
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Power Opportunities</h2>
+
+        <p>
+          Structured information about power generation,
+          grid capacity and related infrastructure.
+        </p>
+
+        <a class="resource" href="../data/power-opportunities.json">
+          /data/power-opportunities.json
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>Energy Demand</h2>
+
+        <p>
+          Structured information about data centers,
+          industrial demand and other energy-intensive projects.
+        </p>
+
+        <a class="resource" href="../data/energy-demand.json">
+          /data/energy-demand.json
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>AI Discovery Resources</h2>
+
+        <p>
+          Public machine-readable resources intended to improve
+          discovery by search engines and AI systems.
+        </p>
+
+        <a class="resource" href="../llms.txt">
+          /llms.txt
+        </a>
+
+        <a class="resource" href="../agents.txt">
+          /agents.txt
+        </a>
+
+        <a class="resource" href="../agents.json">
+          /agents.json
+        </a>
+      </div>
+
+    </div>
+
+    <div class="levels">
+
+      <h2>GEON Verification Levels</h2>
+
+      <div class="level">
+        <strong>L0</strong> Lead — raw opportunity or initial signal.
+      </div>
+
+      <div class="level">
+        <strong>L1</strong> Identity Verified — submitting entity identified.
+      </div>
+
+      <div class="level">
+        <strong>L2</strong> Resource Declared — structured resource information submitted.
+      </div>
+
+      <div class="level">
+        <strong>L3</strong> Documentation Verified — key evidence reviewed.
+      </div>
+
+      <div class="level">
+        <strong>L4</strong> Technical Qualified — sufficient technical information for preliminary assessment.
+      </div>
+
+      <div class="level">
+        <strong>L5</strong> Commercial Qualified — commercial conditions sufficiently developed.
+      </div>
+
+      <div class="level">
+        <strong>L6</strong> Project Ready — suitable for transaction or project execution.
+      </div>
+
+    </div>
+
+    <div class="note">
+
+      <strong>Oman Pilot Market</strong>
+
+      <p>
+        GEON is initially testing its energy opportunity discovery and
+        verification model in Oman, with a focus on reliable gas-based
+        power, energy resources, infrastructure and large-scale digital
+        infrastructure demand.
+      </p>
+
+      <p>
+        GEON does not guarantee ownership, availability, quality,
+        quantity, technical performance, commercial terms or transaction
+        completion unless explicitly stated in a separately verified record
+        or agreement.
+      </p>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    GEON — Global Energy Opportunity Network
+  </div>
+</footer>
+
+</body>
+</html>
