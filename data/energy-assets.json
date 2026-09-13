@@ -1,0 +1,26 @@
+{
+  "registry": {
+    "name": "GEON Energy Asset Registry",
+    "version": "0.1",
+    "status": "pilot",
+    "description": "Machine-readable registry structure for verified energy and power opportunities."
+  },
+  "verification_levels": {
+    "L0": "Lead",
+    "L1": "Identity Verified",
+    "L2": "Resource Declared",
+    "L3": "Documentation Verified",
+    "L4": "Technical Qualified",
+    "L5": "Commercially Qualified",
+    "L6": "Transaction or Project Ready"
+  },
+  "assets": [],
+  "data_principles": {
+    "evidence_required": true,
+    "source_required": true,
+    "verification_status_required": true,
+    "timestamp_required": true,
+    "version_controlled": true
+  },
+  "note": "No real energy asset is published in this initial registry. Real assets will only be added after evidence-based verification."
+}
