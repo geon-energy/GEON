@@ -1,0 +1,25 @@
+{
+  "registry": {
+    "name": "GEON Power Opportunity Registry",
+    "version": "0.1",
+    "status": "pilot",
+    "description": "Machine-readable registry structure for verified power generation, grid, storage and electricity opportunities."
+  },
+  "opportunity_types": [
+    "Power Generation",
+    "Grid Connection",
+    "Battery Energy Storage",
+    "Reliable Power Supply",
+    "Power Infrastructure",
+    "Data Center Power"
+  ],
+  "opportunities": [],
+  "data_principles": {
+    "evidence_required": true,
+    "source_required": true,
+    "verification_status_required": true,
+    "timestamp_required": true,
+    "version_controlled": true
+  },
+  "note": "No real power opportunity is published in this initial registry. Real opportunities will only be added after evidence-based verification."
+}
