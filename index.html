@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GEON — Global Energy Opportunity Network</title>
+
+  <meta name="description" content="GEON — Global Energy Opportunity Network. A verified energy and power opportunity network connecting resources, infrastructure, power, demand and projects.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7faf8;
+      color: #17352b;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #dce8e2;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: #17352b;
+      color: #d8b45a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .brand-text {
+      font-size: 19px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      color: #416257;
+    }
+
+    nav a:hover {
+      color: #17352b;
+    }
+
+    .hero {
+      padding: 90px 0 80px;
+      background:
+        linear-gradient(135deg, #eef6f1 0%, #ffffff 55%, #f4f0df 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #92752b;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: -2px;
+      color: #17352b;
+    }
+
+    .hero h2 {
+      margin: 0 0 20px;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 500;
+      color: #416257;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 18px;
+      color: #506960;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 8px;
+      border: 1px solid #17352b;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .button.primary {
+      background: #17352b;
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: #17352b;
+    }
+
+    .network-card {
+      background: #17352b;
+      color: #ffffff;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(23, 53, 43, 0.15);
+    }
+
+    .network-card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .network-item {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .network-item:last-child {
+      border-bottom: 0;
+    }
+
+    .network-item strong {
+      display: block;
+      color: #d8b45a;
+      margin-bottom: 4px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      margin: 0 0 12px;
+      font-size: 36px;
+      color: #17352b;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: #5d7068;
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dce8e2;
+      border-radius: 14px;
+      padding: 26px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #17352b;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #60746c;
+      font-size: 15px;
+    }
+
+    .verification {
+      background: #edf5f0;
+    }
+
+    .levels {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
+    .level {
+      background: #ffffff;
+      border: 1px solid #d6e3dc;
+      border-radius: 10px;
+      padding: 18px 10px;
+      text-align: center;
+    }
+
+    .level strong {
+      display: block;
+      font-size: 18px;
+      color: #17352b;
+      margin-bottom: 6px;
+    }
+
+    .level span {
+      font-size: 12px;
+      color: #60746c;
+    }
+
+    .data-chain {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .chain-item {
+      background: #ffffff;
+      border: 1px solid #dce8e2;
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+      font-weight: 700;
+      color: #31564a;
+    }
+
+    .oman {
+      background: #ffffff;
+    }
+
+    .oman-box {
+      background: #f4f0df;
+      border: 1px solid #e4d9ad;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .oman-box h3 {
+      margin-top: 0;
+      color: #17352b;
+    }
+
+    .ai-section {
+      background: #17352b;
+      color: #ffffff;
+    }
+
+    .ai-section h2 {
+      color: #ffffff;
+    }
+
+    .ai-section p {
+      color: #d7e3dd;
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .ai-card {
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 14px;
+      padding: 24px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .ai-card h3 {
+      margin-top: 0;
+      color: #d8b45a;
+    }
+
+    .disclaimer {
+      padding: 35px 0;
+      background: #f1f4f2;
+      color: #687a73;
+      font-size: 13px;
+    }
+
+    footer {
+      background: #10251e;
+      color: #b7c8c0;
+      padding: 35px 0;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .levels {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .data-chain {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ai-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .levels,
+      .data-chain {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="/" class="brand">
+      <div class="logo">G</div>
+      <div class="brand-text">GEON</div>
+    </a>
+
+    <nav>
+      <a href="#network">Network</a>
+      <a href="#verification">Verification</a>
+      <a href="#assets">Assets</a>
+      <a href="#ai">AI Access</a>
+      <a href="#oman">Oman</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="eyebrow">
+        Global Energy Opportunity Network
+      </div>
+
+      <h1>GEON</h1>
+
+      <h2>
+        Verified Energy &amp; Power Opportunity Network
+      </h2>
+
+      <p>
+        GEON is building a global, structured and evidence-based network
+        connecting energy resources, infrastructure, power generation,
+        grid capacity, industrial demand, data centers and AI infrastructure.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="/energy/">
+          Explore Energy Assets
+        </a>
+
+        <a class="button secondary" href="/submit/">
+          Submit an Opportunity
+        </a>
+
+        <a class="button secondary" href="/ai/">
+          AI / Agent Access
+        </a>
+      </div>
+    </div>
+
+    <div class="network-card">
+
+      <h3>From Energy Data to Real Projects</h3>
+
+      <div class="network-item">
+        <strong>01 — Discover</strong>
+        Energy resources and infrastructure opportunities.
+      </div>
+
+      <div class="network-item">
+        <strong>02 — Verify</strong>
+        Evidence, technical data and commercial conditions.
+      </div>
+
+      <div class="network-item">
+        <strong>03 — Structure</strong>
+        Standardized machine-readable asset records.
+      </div>
+
+      <div class="network-item">
+        <strong>04 — Match</strong>
+        AI-assisted opportunity and demand matching.
+      </div>
+
+      <div class="network-item">
+        <strong>05 — Execute</strong>
+        Real projects, transactions and infrastructure.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="network">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>A Global Energy Opportunity Network</h2>
+
+      <p>
+        GEON is designed as a structured data layer connecting
+        energy supply, infrastructure, power conversion and energy demand.
+      </p>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Energy Resources</h3>
+        <p>
+          Natural gas, associated gas, flare gas, residual gas,
+          pipeline gas, oil, solar, wind and other energy resources.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Infrastructure</h3>
+        <p>
+          Processing facilities, pipelines, transportation,
+          power plants, substations, grid connections and storage.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Demand</h3>
+        <p>
+          Data centers, AI/HPC infrastructure, industrial loads,
+          reliable power demand and other energy-intensive projects.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="verification" class="verification">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Verification Before Opportunity</h2>
+
+      <p>
+        GEON separates raw leads from verified project information.
+        Verification levels indicate the maturity of available evidence.
+      </p>
+    </div>
+
+    <div class="levels">
+
+      <div class="level">
+        <strong>L0</strong>
+        <span>Lead</span>
+      </div>
+
+      <div class="level">
+        <strong>L1</strong>
+        <span>Identity Verified</span>
+      </div>
+
+      <div class="level">
+        <strong>L2</strong>
+        <span>Resource Declared</span>
+      </div>
+
+      <div class="level">
+        <strong>L3</strong>
+        <span>Documentation Verified</span>
+      </div>
+
+      <div class="level">
+        <strong>L4</strong>
+        <span>Technical Qualified</span>
+      </div>
+
+      <div class="level">
+        <strong>L5</strong>
+        <span>Commercial Qualified</span>
+      </div>
+
+      <div class="level">
+        <strong>L6</strong>
+        <span>Project Ready</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="assets">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Energy Asset Digital Passport</h2>
+
+      <p>
+        Each qualified energy opportunity can be represented as a structured
+        digital asset record with traceable source information.
+      </p>
+
+    </div>
+
+    <div class="data-chain">
+
+      <div class="chain-item">
+        Country
+      </div>
+
+      <div class="chain-item">
+        Concession
+      </div>
+
+      <div class="chain-item">
+        Block
+      </div>
+
+      <div class="chain-item">
+        Field
+      </div>
+
+      <div class="chain-item">
+        Well
+      </div>
+
+      <div class="chain-item">
+        Facility
+      </div>
+
+      <div class="chain-item">
+        Gas / Energy Stream
+      </div>
+
+      <div class="chain-item">
+        Delivery Point
+      </div>
+
+      <div class="chain-item">
+        Pipeline
+      </div>
+
+      <div class="chain-item">
+        Power Plant
+      </div>
+
+      <div class="chain-item">
+        Grid Connection
+      </div>
+
+      <div class="chain-item">
+        Data Center / Load
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="oman" class="oman">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Oman — GEON Pilot Market</h2>
+
+      <p>
+        Oman is the initial market for testing the GEON energy opportunity
+        discovery, verification and project-matching model.
+      </p>
+
+    </div>
+
+    <div class="oman-box">
+
+      <h3>Current Focus</h3>
+
+      <p>
+        GEON-Oman is focused on identifying and structuring opportunities
+        involving reliable gas-based power, energy resources, processing,
+        transportation, grid infrastructure and large-scale digital
+        infrastructure demand.
+      </p>
+
+      <p>
+        Initial opportunities may include natural gas, associated gas,
+        flare gas, residual gas, pipeline gas, power generation,
+        BESS, grid capacity and data-center demand.
+      </p>
+
+      <p>
+        All public information is subject to verification status,
+        evidence availability and applicable confidentiality restrictions.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="ai" class="ai-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Designed for Humans and AI Agents</h2>
+
+      <p>
+        GEON is being designed not only as a human-facing website,
+        but also as a machine-readable energy information layer.
+      </p>
+
+    </div>
+
+    <div class="ai-grid">
+
+      <div class="ai-card">
+
+        <h3>Human Interface</h3>
+
+        <p>
+          People can discover energy opportunities, submit assets,
+          review verification status and initiate project discussions.
+        </p>
+
+      </div>
+
+      <div class="ai-card">
+
+        <h3>Intelligence Interface</h3>
+
+        <p>
+          Structured energy data enables AI systems to understand,
+          compare and match opportunities across countries and projects.
+        </p>
+
+      </div>
+
+      <div class="ai-card">
+
+        <h3>Machine-Readable Data</h3>
+
+        <p>
+          GEON provides structured JSON data, metadata, sitemaps
+          and other machine-readable resources for future AI discovery.
+        </p>
+
+      </div>
+
+      <div class="ai-card">
+
+        <h3>Future Agent Network</h3>
+
+        <p>
+          Future versions may support APIs, agent-to-agent discovery,
+          machine negotiations and automated project workflows.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>From Data to Execution</h2>
+
+      <p>
+        GEON is intended to create a continuous loop between real-world
+        assets, structured information, AI discovery and project execution.
+      </p>
+
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Real Assets</h3>
+        <p>
+          Energy resources and infrastructure exist in the physical world.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Verified Data</h3>
+        <p>
+          Evidence is transformed into structured and traceable records.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI Matching</h3>
+        <p>
+          AI systems can discover relationships between supply,
+          infrastructure and demand.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Project Formation</h3>
+        <p>
+          Qualified opportunities can move toward technical,
+          commercial and investment discussions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>New Data</h3>
+        <p>
+          Project development creates new verified information.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Continuous Improvement</h3>
+        <p>
+          New evidence and project outcomes improve the network over time.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="disclaimer">
+
+  <div class="container">
+
+    <strong>GEON Data &amp; Verification Disclaimer</strong>
+
+    <p>
+      GEON does not guarantee ownership, availability, quality, quantity,
+      technical performance, commercial terms or transaction completion
+      unless explicitly stated in a separately verified record or agreement.
+      Verification levels describe the status of available evidence and
+      should not be interpreted as a guarantee of a transaction.
+    </p>
+
+  </div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <p>
+      <strong>GEON — Global Energy Opportunity Network</strong>
+    </p>
+
+    <p>
+      Verified Energy &amp; Power Opportunity Network
+    </p>
+
+    <p>
+      © 2026 GEON. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
