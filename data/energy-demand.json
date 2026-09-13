@@ -1,0 +1,25 @@
+{
+  "registry": {
+    "name": "GEON Energy Demand Registry",
+    "version": "0.1",
+    "status": "pilot",
+    "description": "Machine-readable registry structure for verified energy and reliable power demand from data centers, AI/HPC facilities and industrial loads."
+  },
+  "demand_types": [
+    "Data Center",
+    "AI/HPC",
+    "Industrial Load",
+    "Digital Infrastructure",
+    "Reliable Power Demand",
+    "Flexible Power Demand"
+  ],
+  "demand_records": [],
+  "data_principles": {
+    "evidence_required": true,
+    "source_required": true,
+    "verification_status_required": true,
+    "timestamp_required": true,
+    "version_controlled": true
+  },
+  "note": "No real energy demand record is published in this initial registry. Real demand opportunities will only be added after evidence-based verification."
+}
